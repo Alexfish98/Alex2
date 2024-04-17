@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="" >
 <head>
@@ -7,7 +6,7 @@
     
     margin-top: -30px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #1E3932FA;
    
     
   }
@@ -15,44 +14,81 @@
     width: 100%;
     margin: 0;
   }
+  .aaa{
+    background-color: blanchedalmond; 
+    border-radius: 10px; 
+    text-align: center; 
+    margin-left: 32%; 
+    font-size: 30px;
+  }
+  .diva {
+    background-color: pink;
+    width: 170px;
+    margin: 15px;
+    height: 230px;
+    border-radius: 10px;
+    display: inline-block;
+  
+  }
+  .diva img {
+    text-align: center;
+    margin-left: 9%;
+    width: 80%;
+    margin-top: 10px;
+    height: : 70%;
+    border-radius: 20px;
+  }
+  .diva p {
+    text-align: center;
+    margin-top: -5px;
+    
+  }
+  
     header{
-      width: 100%;
-      margin-top: 20px;
       border: 1px solid black;
-      height: 150px;
+      width: 100%;
+      margin-top: -80px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      height: 65px;
       padding: 0;
       position: fixed;
       background-color: #AFB627;
       z-index: 100;
       background-image:url('cover3.jpg')
-    }
+
+       }
     header #img{
       display: inline;
-      font-size: 70px;
+      font-size: 35px;
       margin-left: 3%;
     }
     header p{
       display: inline-block;
-      margin-left: 3%;
+      margin-left: 2%;
       font-weight: 700;
       padding: 0;
-      margin-top: 0px;
+      margin-top: -10px;
       padding-top: 30px;
+      -webkit-text-fill-color: rgba(200, 0, 0, 150);
+      -webkit-text-stroke:1px green;
       
       
       
-      font-size: 70px;
+      font-size: 35px;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
     header #btn {
       display: inline-block;
-      font-size: 40px;
-      padding: 20px;
+      font-size: 25px;
+      padding: 3px;
       color: white;
       background-color: royalblue;
       border-radius: 10px;
-      margin-left: 25%;
-      margin-top: 0px;
+      margin-top: 20px;
+      margin-right: 5px;
+      
     
       
     }
@@ -80,12 +116,13 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    
 }
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 18px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -99,7 +136,7 @@
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 /* When the height of the screen is less than
@@ -110,7 +147,7 @@ so they don't overlap */
 @media screen and (max-height:450px){
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-    font-size: 40px;
+    font-size: 20px;
     top: 15px;
     right: 35px;
   }
@@ -126,7 +163,7 @@ input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 /* Set a style for all buttons */
@@ -139,11 +176,12 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
-    font-size: 25px;
+    font-size: 10px;
 }
 
 
 .cancelbtn {
+   
     width: auto;
     padding: 10px 18px;
     background-color: #4682b4;
@@ -186,6 +224,7 @@ span.psw {
    height: 100%;
    overflow: auto;
    padding-top: 60px;
+   
 }
 
 
@@ -194,7 +233,7 @@ span.psw {
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 80%;
-    font-size: 60px;
+    font-size: 20px;
     font-weight: 500;
     border: 10px solid #186C1D;
 }
@@ -206,7 +245,7 @@ span.psw {
     right: 25px;
     top: 0;
     color: #000;
-    font-size: 70px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -242,10 +281,17 @@ button on extra small screens */
        float: none;
     }
     .cancelbtn {
-       width: 100%;
+       width: 50%;
+      
     }
 
 }
+
+}
+
+  
+}
+
   </style>
   <script>
 
@@ -274,7 +320,7 @@ function openNav() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My library</title>
+  <title>of course home</title>
 </head>
 
 <body>
@@ -299,22 +345,24 @@ function closeNav() {
 
   onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a onclick="document.querySelector('.about').innerHTML = 'Alexander'">About</a>
-    <a href="#">Services</a>
-    <a href="#">Careers</a>
-    <a href="#">Contact</a>
+    <a href="home.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="videos.html">Videos</a>
+    <a href="apps.html">apps</a>
+    <a href="contact-us.html">contact us</a>
+    
+    <p style="font-size: 20px; margin-top: 100%;">Alex <br />web development</p>
   </div>
 </div>
 
 
-<span id="img" style="font-size:70px;cursor:
+<span id="img" style="font-size: 35px;cursor:
 pointer"
 
 onclick="openNav()">&#9776;
 </span>
 
-    <p style="font-size: 70px;-webkit-text-fill-color: rgba(200, 0, 0, 150);
-    -webkit-text-stroke:1px green;">My Library</p>
+<p>of course</p>
 
 
 
@@ -322,7 +370,7 @@ onclick="openNav()">&#9776;
 getElementById('id01')
 
 .style.display='block'"
-style=" width:auto; border-radius: 20px; text-align: center;">Login
+style=" float: right; width:auto; border-radius: 10px; ">Login
 </button>
 
 
@@ -380,143 +428,87 @@ Remember me
   </form>
 </div>
   </header>
-<div>
-<style>
-
-
-#myInput {
-  background-image:
-  url('/img/search.png');
-  color: #623858;
-  font-family: Arial, Helvetica, sans-serif;
-  background-position: 5px 10px;
-  background-size:60px;
-  background-repeat: no-repeat;
-  width: 85%;
-  margin-left: 7%;
-  box-sizing: border-box;
-  font-size: 80px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-  margin-top: -170px;
-  border-radius: 20px;
-  position: fixed;
-  
-}
-
-
-#myTable {
-  
-  width: 100%;
-  
-  font-size: 0px;
-  text-align: center;
-  border-radius: 20px
-}
-
-
-#myTable th, #myTable td {
-  text-align: center;
-  padding: 12px;
-  
-}
-
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-  
-
-}
-#myTable tr .tda,tdb,a {
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke: 2px aliceblue;
-  text-align: center;
-  vertical-align: bottom;
-    
-}
-
-
-#myTable tr.header{
-  background-color: #f1f1f1;
-  font-size: 130px;
-}
-tr h6:hover{
-  background-color: cornflowerblue;
-  
-}
-#imgg{
-  width: 30%;
-  border-radius: 30px;
-  
-  
-}
-
-.dtable{
-  
-  background-image: url(cov.jpg)
-}
-</style>
-</head>
-
-<body>
-  <div style="height: 370px;">
-    Devoloped by Alex
+ 
+  <div style=" margin-top: 100px;" >
+     <div><h1 style="color: red; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Top books</h1></div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+   
+   
   </div>
-
-<input type="text" id="myInput"
-onkeyup="myFunction()" placeholder=
-"Search books..."
-
-title="Type in a name">
-
+   <div style=" margin-top: 10px;">
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
   
-</div>
-<div class="dtable">
-<table id="myTable">
-
-
   
-
- <tr >
-    <td class="tda"><h6>የፍቅር ኬሚስትሪ</h6></td>
-    
-    <td class="tdb"><a href="https://m.facebook.com/"><img src="alex4.jpg" id="imgg" alt="alex4.jpg"></a></td>
-  </tr>
-
-
-</table>
-</div>
-<script>
-
-function myFunction() {
-var input, filter, table, tr, td, i;
-input=document.getElementById("myInput");
-
-filter=input.value.toUpperCase();
-
-table=document.getElementById("myTable");
-
-tr=table.getElementsByTagName("tr");
-
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[0];
-
- if (td) {
-   if (td.innerHTML.toUpperCase()
-   .indexOf(filter) > -1) {
-
-     tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-
-      }
-    }
-  }
-}
-
-</script>
-
-</div>
+   </div>
+   <div style=" margin-top: 30px;" >
+     <div><h1 style="color: red; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Top APPS</h1></div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+   
+   
+  </div>
+   <div style=" margin-top: 10px;">
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
+  
+  
+   </div>
+   <div style=" margin-top: 30px;" >
+     <div><h1 style="color: red; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Top videos</h1></div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+    <div class="diva" style="">
+      <img src="images/alex5.jpg">
+      <p>ፍቅር <br /> እስከ መቃብር</p>
+    </div>
+   
+   
+  </div>
+   <div style=" margin-top: 10px;">
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
+     <div class="diva" style="">
+       <img src="images/alex5.jpg">
+       <p>ፍቅር <br /> እስከ መቃብር</p>
+     </div>
+  
+  
+   </div>
+   <a href="books.html" class="aaa">see more..</a>
+  <div style="text-align: center;">
+    <div style="background-color: #B9EBD8FA; border-radius: 30px; width: 380px; height: 500px; margin-left: 15px; margin-top: 20px; ">
+      
+    </div>
+  </div>
 </body>
 </html>
